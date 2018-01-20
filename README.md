@@ -72,7 +72,7 @@ To bardzo duża zaleta Node.js, dlatego że niezależnie od tego czy plik ma np.
 
 Trzeba wykorzystać funkcję callback - znasz tę koncepcję np. z AJAX-a, eventów czy funkcji czasu.
 
-<img src="https://blog.4psa.com/wp-content/uploads/callback-syndrome-cause.jpg" alt="Callbacki w asynchroniczności" width="450">
+<img src="https://blog.4psa.com/wp-content/uploads/callback-syndrome-cause.jpg" alt="Callbacki w asynchroniczności" width="800">
 
 ### Callback w stylu Node
 
@@ -280,7 +280,7 @@ LISTOWANIE ZAWARTOŚCI KATALOGU
         WYŚWIETLENIE ZAWARTOŚCI PLIKU LUB INFORMACJI BŁĘDZIE
 ```
 
-### Zadanie dnia: Program TrAwKa
+## Zadanie dnia: Program TrAwKa
 
 Dzisiejsze zadanie dnia pozwoli Ci stworzyć program "TrAwKa". Ma on modyfikować plik tekstowy w taki sposób, aby każdy nieparzysty znak był pisany wielką literą, a parzysty małą literą.
 
