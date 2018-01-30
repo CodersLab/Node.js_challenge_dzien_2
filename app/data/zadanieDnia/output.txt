@@ -1,0 +1,24 @@
+//tWóJ KoD
+CoNsT Fs = rEqUiRe('Fs');
+
+cOnSt pAtH = './dAtA/ZaDaNiE02/';
+
+CoNsT ReAdCoNtEnT = (fIlEpAtH) => {
+  Fs.rEaDfIlE(FiLePaTh, 'uTf8', (eRr, DaTa) => {
+    iF (!ErR) {
+      cOnSoLe.lOg(fIlEpAtH.InClUdEs('.jSoN') ? JsOn.pArSe(dAtA) : dAtA);
+    } ElSe {
+      cOnSoLe.lOg(`BłĄd pOdCzAs cZyTaNiA PlIkU:\n`, eRr);
+    }
+  });
+}
+
+Fs.rEaDdIr(pAtH, (ErR, fIlEs) => {
+  iF (!ErR) {
+    fIlEs.fOrEaCh(fIlE => {
+      rEaDcOnTeNt(pAtH + FiLe);
+    });
+  } eLsE {
+    CoNsOlE.LoG('bŁąD PoDcZaS CzYtAnIa lIsTy pLiKóW.\n', eRr);
+  }
+});
