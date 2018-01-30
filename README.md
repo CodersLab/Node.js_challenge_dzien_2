@@ -91,7 +91,7 @@ Teraz praktyka - jak w końcu odczytać ten plik? Np. w ten sposób:
 ```JavaScript
 const fs = require('fs');
 
-fs.openFile('/home/some/file.txt', 'utf8', (err, data) => {
+fs.readFile('/home/some/file.txt', 'utf8', (err, data) => {
     if (err === null){
         console.log('Poprawnie odczytano plik.', data);
     } else {
@@ -110,7 +110,7 @@ Jeżeli wolisz, tutaj masz wersję z komentarzami:
 const fs = require('fs');
 
 //Odczytaj plik...
-fs.openFile('/home/some/file.txt', 'utf8', (err, data) => {//...kiedy skończysz uruchom naszą funkcję callback
+fs.readFile('/home/some/file.txt', 'utf8', (err, data) => {//...kiedy skończysz uruchom naszą funkcję callback
     if (err === null){ //Sprawdzamy czy obiekt błędu jest null-em - jeżeli tak - wyświetlamy zawartość pliku
         console.log('Poprawnie odczytano plik.', data);
     } else { //Jeżeli obiekt błędu nie był null-em, to pojawił się błąd - np. plik nie istniał
@@ -172,7 +172,7 @@ fs.writeFile('./data/file.txt', 'Hello, World!', err => {//Zapis: ...kiedy skoń
     if (err === null){ //Zapis: Sprawdzamy czy obiekt błędu jest null-em - jeżeli tak - wszystko poszło ok
     
         //Odczytaj plik...
-        fs.openFile('./data/file.txt', 'utf8', (err, data) => {//Odczyt: ...kiedy skończysz uruchom naszą funkcję callback
+        fs.readFile('./data/file.txt', 'utf8', (err, data) => {//Odczyt: ...kiedy skończysz uruchom naszą funkcję callback
             if (err === null){ //Odczyt: Sprawdzamy czy obiekt błędu jest null-em - jeżeli tak - wyświetlamy zawartość pliku
                 console.log('Poprawnie zapisano i odczytano plik.', data);
             } else { //Odczyt: Jeżeli obiekt błędu nie był null-em, to pojawił się błąd - np. plik nie istniał
