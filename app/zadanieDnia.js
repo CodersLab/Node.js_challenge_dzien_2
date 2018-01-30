@@ -1,14 +1,14 @@
 const fs = require('fs');
 
-fs.writeFileSync('./data/zadanieDnia/test-copy.txt', fs.readFileSync('./data/zadanieDnia/test.txt'));
+fs.writeFileSync('./copy.txt', fs.readFileSync(process.argv[2]));
 
-fs.readFile('./data/zadanieDnia/test.txt', 'utf8', (err, data) => {
+fs.readFile(process.argv[2], 'utf8', (err, data) => {
   if (err === null) {
     let newText = "";
     for (let i = 0; i < data.length; i++) {
       newText += (i % 2 === 0) ? data[i].toUpperCase() : data[i].toLowerCase();
     }
-    fs.writeFile('./data/zadanieDnia/test.txt', newText, err => {
+    fs.writeFile(process.argv[2], newText, err => {
       if (err === null) {
         console.log('Poprawnie odczytano i zapisano zmieniony plik');
       } else {
