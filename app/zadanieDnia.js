@@ -11,6 +11,11 @@ let trawka = (path) => {
 		})
 		
 		console.log(newData.join(''))
+		
+		fs.writeFile(path, newData.join(''), err => {
+			let msg = err ? 'Błąd zapisu pliku' : 'Plik poprawnie zapisany';
+			return console.log(msg);
+		})
 	});
 };
 
