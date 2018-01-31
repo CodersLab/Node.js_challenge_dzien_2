@@ -4,8 +4,8 @@ const fs = require('fs');
 
 fs.readFile('./data/zadanie01/input.json', 'utf8', (err, data) => {
     if (err === null){
-        let arrParsed = JSON.parse(data);
-        let sum = arrParsed.reduce( (prev, curr) => { return prev + curr } );
+        const arrParsed = JSON.parse(data);
+        const sum = arrParsed.reduce( (prev, curr) => { return prev + curr } );
 
         fs.writeFile('./data/zadanie01/sum.txt', sum, err => {
             if (err === null){
