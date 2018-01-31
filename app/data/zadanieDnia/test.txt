@@ -1,7 +1,7 @@
-You Don't Know JS: ES6 & Beyond
-Foreword
+YoU DoN'T KnOw jS: eS6 & bEyOnD
+FoReWoRd
 
-Kyle Simpson is a thorough pragmatist.
+KyLe sImPsOn iS A ThOrOuGh pRaGmAtIsT.
 
-I can't think of higher praise than this. To me, these are two of the most important qualities that a software developer must have. That's right: must, not should. Kyle's keen ability to tease apart layers of the JavaScript programming language and present them in understandable and meaningful portions is second to none.
-[https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20%26%20beyond/foreword.md]
+I CaN'T ThInK Of hIgHeR PrAiSe tHaN ThIs. To mE, tHeSe aRe tWo oF ThE MoSt iMpOrTaNt qUaLiTiEs tHaT A SoFtWaRe dEvElOpEr mUsT HaVe. ThAt's rIgHt: MuSt, NoT ShOuLd. KyLe's kEeN AbIlItY To tEaSe aPaRt lAyErS Of tHe jAvAsCrIpT PrOgRaMmInG LaNgUaGe aNd pReSeNt tHeM In uNdErStAnDaBlE AnD MeAnInGfUl pOrTiOnS Is sEcOnD To nOnE.
+[HtTpS://GiThUb.cOm/gEtIfY/YoU-DoNt-kNoW-Js/bLoB/MaStEr/eS6%20%26%20bEyOnD/FoReWoRd.mD]
