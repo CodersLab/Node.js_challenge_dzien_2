@@ -170,7 +170,7 @@ const fs = require('fs');
 //Zapisz plik...
 fs.writeFile('./data/file.txt', 'Hello, World!', err => {//Zapis: ...kiedy skończysz uruchom naszą funkcję callback
     if (err === null){ //Zapis: Sprawdzamy czy obiekt błędu jest null-em - jeżeli tak - wszystko poszło ok
-    
+
         //Odczytaj plik...
         fs.readFile('./data/file.txt', 'utf8', (err, data) => {//Odczyt: ...kiedy skończysz uruchom naszą funkcję callback
             if (err === null){ //Odczyt: Sprawdzamy czy obiekt błędu jest null-em - jeżeli tak - wyświetlamy zawartość pliku
@@ -179,7 +179,7 @@ fs.writeFile('./data/file.txt', 'Hello, World!', err => {//Zapis: ...kiedy skoń
                 console.log('Błąd podczas odczytu pliku!', err);
             }
         });
-        
+
     } else { //Zapis: Jeżeli obiekt błędu nie był null-em, to pojawił się błąd - np. niepoprawna ścieżka
         console.log('Błąd podczas zapisu pliku!', err);
     }
@@ -276,7 +276,7 @@ LISTOWANIE ZAWARTOŚCI KATALOGU
     KIEDY SKOŃCZY - CALLBACK:
     PĘTLA DLA KAŻDEJ NAZWY PLIKU
     ODCZYT PLIKU
-        KIERY SKOŃCZY - CALLBACK:
+        KIEDY SKOŃCZY - CALLBACK:
         WYŚWIETLENIE ZAWARTOŚCI PLIKU LUB INFORMACJI BŁĘDZIE
 ```
 
@@ -295,7 +295,7 @@ ODCZYT PLIKU
     KIEDY SKOŃCZY - CALLBACK:
     ZMIANA TEKSTU WEDŁUG WZORU
     ZAPIS TAKIEGO SAMEGO PLIKU
-        KIERY SKOŃCZY - CALLBACK:
+        KIEDY SKOŃCZY - CALLBACK:
         INFORMACJA O POWODZENIU LUB BŁĘDZIE
 ```
 
