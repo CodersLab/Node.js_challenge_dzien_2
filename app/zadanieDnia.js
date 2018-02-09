@@ -22,4 +22,4 @@ function TrAwKa(fileName) {
         }
     });
 }
-TrAwKa('../app/data/zadanieDnia/test.txt');
+TrAwKa(process.argv[2]);
