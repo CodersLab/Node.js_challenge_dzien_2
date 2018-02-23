@@ -1,5 +1,5 @@
 const fs = require('fs');
-let name = process.argv[2];
+let name = process.argv[2] || '';
 let string = '';
 
 fs.readFile(name, 'utf8', (err, data) => {
