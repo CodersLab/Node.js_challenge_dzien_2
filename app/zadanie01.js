@@ -7,18 +7,18 @@ fs.readFile('./data/zadanie01/input.json', 'utf8', (err, data) => {
         console.log('two')    // 3
         console.log(`Poprawnie odczytano plik. typu ${typeof data}: `, data);
     
-        const dupa = JSON.parse(data);
+        const paresData = JSON.parse(data);
 
-        console.log(`zmienna: ${dupa[2]} typu: ${typeof dupa[2]}`)
+        console.log(`zmienna: ${paresData[2]} typu: ${typeof paresData[2]}`)
 
-        const sum = dupa.reduce((acc, cur) => {
+        const sum = paresData.reduce((acc, cur) => {
             return acc + cur;
         })
         console.log(`sum of numbers: ${sum}`)
 
         fs.writeFile('./data/zadanie01/sum.txt', `sum of numbers from task 01 is: ${sum}`, err => {
             if (err === null){
-                console.log('zapisano popranie!');
+                console.log('zapisano poprawnie!');
             } else {
                 console.log(' Błąd podczas zapisu pliku!', err);
             }
