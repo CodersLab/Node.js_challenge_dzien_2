@@ -1,0 +1,1 @@
+sum of numbers from task 01 is: 108
